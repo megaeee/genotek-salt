@@ -56,4 +56,4 @@ grains - переменные, уникальные для каждого хос
 
 pillars - переменные, общие для инсталляции. Ключи, пароли, сертификаты - всё туда
 
-states - исполняемые последовательно модули. Описания можно посмотреть, напрмер, [тут](https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html)
+states - исполняемые последовательно модули. Описания можно посмотреть, напрмер, [тут](https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html). О модификаторах исполнения для state'ов можно глянуть [тут](https://docs.saltproject.io/en/latest/ref/states/requisites.html)
