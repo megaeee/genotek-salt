@@ -1,6 +1,8 @@
 # vim: syntax=yaml
 /vm_init_start:
-  file.touch
+  file.managed:
+    - contents: ''
+    - contents_newline: False
 
 /shutdown_mark:
   file.absent
@@ -8,7 +10,7 @@
 Delete swap file:
   file.absent:
     - name: /8G.swap
-    - unless:
+    - onchanges:
       - file: /vm_init_start
 
 Enable swap file:
